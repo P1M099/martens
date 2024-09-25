@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.martens</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <div>
+            <input type="search" placeholder="Search on Dr. martens" title="Search on Dr. martens">
+            <input type="button" value="CLOSE" class="ratWRS12 closeBtn">
+        </div>
+        <ul>
+            <li class="ratWBS12">HIGHLIGHTS</li>
+            <li class="ratWRS12"><a href="productMenList.html">New Arrivals For Him</a></li>
+            <li class="ratWRS12"><a href="productWomenList.html">New Arrivals For Her</a></li>
+        </ul>
+    </div>
+    <div id="shopping_bagPanel">
+        <div>
+            <p class="ratWRS12">Your bag is empty</p>
+        </div>
+        <div class="active">
+            <ul>
+                <li>
+                    <h2 class="ratWRS14">Your selection <span>(1)</span></h2>
+                    <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                    <figure>
+                        <img src="images/productMenBoots0101.jpg" alt="product image">
+                        <figcaption>
+                            <dl class="ratWR">
+                                <dt class="S14">Jadon Boot Piercing Milled Nappa Leather Platforms</dt>
+                                <dd class="S12">Color : Black</dd>
+                                <dd class="S12">Qty : 1</dd>
+                                <dd class="S12">$220.00</dd>
+                                <dd class="S14"><input type="button" value="Remove"></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <span class="ratWBS14">
+                        Subtotal
+                        <strong>$220.00</strong>
+                    </span>
+                    <a href="shoppingBag.html" class="ratWBS14 btn01">GO TO SHOPPING BAG</a>
+                    <a href="checkOut01.html" class="ratWBS14 btn01">PROCEED TO CHECKOUT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="gnb">
+            <div>
+                <h1><a href="indexAfter.html"><img src="images/drMartensLogo.svg" alt="Welcome to Dr.martens"></a></h1>
+                <nav>
+                    <ul class="ratWBS11">
+                        <li><a href="productWomenList.html">WOMEN</a></li>
+                        <li><a href="productMenList.html">MEN</a></li>
+                        <li><a href="productAllList.html">ALL</a></li>
+                        <li><a href="productKidsList.html">KIDS</a></li>
+                        <li><a href="productAccList.html">ACCESSORIES</a></li>
+                        <li><a href="guidesList.html">GUIDES</a></li>
+                    </ul>
+                </nav>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-symbols-outlined openBtn">
+                    </li>
+                    <li>
+                        <input type="button" value="person" class="material-symbols-outlined">
+                    </li>
+                    <li>
+                        <a href="wishList.html" class="material-symbols-outlined">favorite</a>
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-symbols-outlined openBtn">
+                    </li>
+                    <li>
+                        <input type="button" value="menu" class="material-symbols-outlined openBtn">
+                    </li>
+                </ul>
+            </div>
+            <div class="rat mui" id="menuPanel">
+                <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                <nav>
+                    <ul class="WBS20">
+                        <li><a href="productWomenList.html">WOMEN</a></li>
+                        <li><a href="productMenList.html">MEN</a></li>
+                        <li><a href="productAllList.html">ALL</a></li>
+                        <li><a href="productKidsList.html">KIDS</a></li>
+                        <li><a href="productAccList.html">ACCESSORIES</a></li>
+                        <li><a href="guidesList.html">GUIDES</a></li>
+                    </ul>
+                </nav>
+                <a href="accountMyProfile.html" class="WRS14">
+                    <span class="material-symbols-outlined">person</span>
+                    My Profile
+                </a>
+                <a href="shoppingBag.html" class="WRS14">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    Shopping bag
+                </a>
+                <a href="index.html" class="WRS14">
+                    Sign Out
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="footerFAQContainer">
+        <h2 class="cabWRS32">
+            FAQs
+        </h2>
+        <ol class="faqCategory ratWBS14">
+            <li>
+                <input type="button" value="Payments" class="active" data-name="payments">
+            </li>
+            <li>
+                <input type="button" value="Orders & Account" data-name="orders">
+            </li>
+            <li>
+                <input type="button" value="Returns" data-name="returns">
+            </li>
+            <li>
+                <input type="button" value="Delivery" data-name="delivery">
+            </li>
+            <li>
+                <input type="button" value="Products" data-name="products">
+            </li>
+            <li>
+                <input type="button" value="Warranty" data-name="warranty">
+            </li>
+        </ol>
+        <div class="questionTab ratS14 active" id="payments">
+            <ul>
+                <li>
+                    <b>
+                        Does Dr. Martens charge sales tax?
+                    </b>
+                    <p>
+                        Yes, Dr. Martens does collect sales tax in states that require online retailers to collect sales tax on orders shipped into that state.<br>The tax rate applied will be based on the type of item purchased and will be the combined state and local rate for the address to which your order is shipped.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        What payment methods can I use?
+                    </b>
+                    <i>
+                        Payment methods that we accept are:
+                    </i>
+                    <ol>
+                        <li>Mastercard</li>
+                        <li>VISA</li>
+                        <li>American Express</li>
+                        <li>Discover</li>
+                        <li>PayPal</li>
+                        <li>Klarna</li>
+                        <li>Afterpay</li>
+                        <li>Apple Pay</li>
+                        <li>Google Pay</li>
+                    </ol>
+                </li>
+                <li>
+                    <b>
+                        Why didn’t my payment go through?
+                    </b>
+                    <p>
+                        There are a few possible reasons why your payment didn't go through. Most often, the billing address provided does not match the "Master Address" that your issuing bank has on file.<br>If your billing address is correct and the transaction still isn't going through, please contact us. Our customer service team will be able to diagnose the problem and provide a solution.<br>In the event of a declined transaction, you may see pending charges on your account. These are authorization holds placed by your bank when the transaction is attempted; money has not been removed from your account. Authorization holds typically take about 1-2 business days to clear, however this timeline is dependent on your issuing bank. This process can often be expedited by contacting your bank.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Can I pay for my order with multiple credit cards?
+                    </b>
+                    <p>
+                        At this time, our online checkout system does not support payments using multiple credit cards. However, you can pay for your purchase using one credit card and one Dr. Martens gift card.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        How do I redeem a Gift Card online?
+                    </b>
+                    <p>
+                        To redeem a physical or eGift card on drmartens.com, choose your payment method as “Dr. Martens eGift Card” on the payment page at checkout. Type your gift card number and security code into each field.<br>Upon redemption, any unused balance will remain on the  gift card for future purchases.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Where can I use my online gift card?
+                    </b>
+                    <p>
+                        eGift cards may only be purchased on the <a href="indexAfter.html">www.drmartens.com</a> site. Physical gift cards may only be purchased in Dr. Martens retail stores in the United States.<br>Both eGift and physical cards are redeemable both online and in Dr. Martens retail stores in the United States.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        What do I do if the recipient didn't get the gift card?
+                    </b>
+                    <p>
+                        We recommend having the recipient check their spam or junk folder in case the gift card email was routed there by mistake.<br>If they do not see it, please contact us so we may assist you.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        How can I check my Gift Card balance?
+                    </b>
+                    <i>
+                        You may check your Gift Card Balance by following these simple steps:
+                    </i>
+                    <ol>
+                        <li>
+                            1. Navigate to our Gift Cards page here or at the bottom of our home page. 
+                        </li>
+                        <li>
+                            2. Enter your gift card number and security code in the provided fields.
+                        </li>
+                        <li>
+                            3. Select CHECK BALANCE.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <b>
+                        Can I use multiple gift cards on the same order?
+                    </b>
+                    <p>
+                        Yes, you can use multiple Dr. Martens gift cards e-gift cards on the same order! Simply add the gift cards on the payment options screen to redeem them on your purchase!
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="questionTab ratS14" id="orders">
+            <ul>
+                <li>
+                    <b>
+                        What do I do if I received the wrong item?
+                    </b>
+                    <p>
+                        If you received an item that doesn't match what you ordered, please contact us with your order number and photos of the item that you received from us, so we may assist you.<br>Please make sure the photos submitted are attached as .JPEG files.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Can I cancel or change my order?
+                    </b>
+                    <p>
+                        Once an order is placed, we are unable to cancel or change your order. Orders are immediately sent to our warehouse for processing.
+                    </p>
+                    <p>
+                        Once you receive your order, please visit the returns page to print a label to return your order to the warehouse. 
+                    </p>
+                    <p>
+                        If there is an issue with your order regarding an incorrect shipping address. Please contact us as soon as possible for assistance.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Price Guarantee
+                    </b>
+                    <i>
+                        Dr. Martens provides limited price protection for items purchased on our website as follows:
+                    </i>
+                    <i>
+                        PROMOTIONAL PRICING:
+                    </i>
+                    <p>
+                        Special promotional discounts—such as holiday promotional periods in November-December are excluded from price adjustments.
+                    </p>
+                    <i>
+                        SALE PRICING:
+                    </i>
+                    <p>
+                        If any items purchased from drmartens.com go on sale on our website within two (2) weeks of your original purchase, we will credit you the difference. All you need to do is <a href="contacts.html">contact us</a> within two weeks of the price change. When you contact us, please note (1) the style number of the product that is on sale, (2) your order's invoice number. This offer applies only to items purchased through.<br>Dr. Martens reserves the right to change prices for products displayed on the website at any time.  Despite our best efforts, a small number of the items on our site may be mispriced. If the correct price of an item sold by Dr. Martens is higher than the price shown on the website, we will, at our discretion, either contact you for instructions before shipping or cancel your order and notify you of such cancellation.  We will have the right to refuse or cancel any such orders whether or not the order has been confirmed and your payment method charged.  If your payment method has already been charged for the purchase and your order is canceled, we will issue a credit to your payment account in the amount of the charge.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        What do I do if I received the wrong size?
+                    </b>
+                    <p>
+                        If you received a size different than from what you ordered, please <a href="contacts.html">contact us</a> with photos of the item that you received from us including a picture of the inside of the tongue where the size is labeled, so we may assist you further.
+                    </p>
+                    <p>
+                        Please make sure the photos submitted are attached as .JPEGs.
+                    </p>
+                    <p>
+                        Please keep in mind that the easiest way to confirm the size that you received matched the size of the item that was ordered is to refer to the UK size on the packaging. Not all of our styles are going to show the size options for both US Men and US Women's on the packaging.
+                    </p>
+                    <ol>
+                        <li>
+                            - Our Made In England line will show the UK size on the tongue of the item, while the box will show the UK size and the US Men's size.
+                        </li>
+                        <li>
+                            - Our unisex styles are made with the UK, US Men's, and US Women's sizes printed on the box and tongue.
+                        </li>
+                        <li>
+                            - Our insoles typically will show the UK Size as well as the US Men's size shown as "US".
+                        </li>
+                        <li>
+                            - For all styles, the US Men's size is one higher than the UK size and the US Women’s size is two higher than the UK size. This also means that the US Women’s size is one higher than the US Men’s size.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <b>
+                        How can I create an account?
+                    </b>
+                    <i>
+                        Use the following process to create a new account prior to placing an order on drmartens.com:
+                    </i>
+                    <ol>
+                        <li>
+                            1. Select SIGN IN / REGISTER at the top right of the homepage.
+                        </li>
+                        <li>
+                            2. Fill in the requested new customer details.
+                        </li>
+                        <li>
+                            3. Create a password.
+                        </li>
+                    </ol>
+                    <p>
+                        You may also create an account by following the registrations instructions provided at the checkout page, after your order is placed. Please note that your first order will not show up in your account if the account is created this way.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Why should I create a Dr. Martens account?
+                    </b>
+                    <p>
+                        When you create an account, you can access your order history in one convenient location and save multiple shipping addresses for a fast & convenient checkout process. Account holders also get access to My Wishlist, where you can save products that you are interested in.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        How do I reset my password?
+                    </b>
+                    <i>
+                        Use the following process if you are having difficulties logging into your account:
+                    </i>
+                    <ol>
+                        <li>
+                            1. Navigate to the login page via the SIGN IN / REGISTER link at the top of the home page.
+                        </li>
+                        <li>
+                            2. Select FORGOT YOUR PASSWORD? At the bottom of the RETURNING CUSTOM login section.
+                        </li>
+                        <li>
+                            3. Enter your email address and select SEND E-MAIL.
+                        </li>
+                        <li>
+                            4. A link to reset your password will be sent to your email inbox. Please access this link to reset your password. The reset password link will expire after 30 minutes.
+                        </li>
+                    </ol>
+                    <p>
+                        If you do not see the password-reset email in your email inbox, please also check your spam folder or try creating a new account with your email address. 
+                    </p>
+                    <i>
+                        If you’re already logged in and just want to change your password:
+                    </i>
+                    <ol>
+                        <li>
+                            1. Navigate to your account page.
+                        </li>
+                        <li>
+                            2. Select the "password" tab.
+                        </li>
+                        <li>
+                            3. Enter your old password and your new password, then update.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <b>
+                        I can’t find my order in my Order History.
+                    </b>
+                    <p>
+                        You may have checked out as a Guest and created an account afterwards. In this case, the order will unfortunately not show in your account. If you have received an order confirmation number and provided an email address, you will receive email updates on the status of your order.<br>If you have not received an order number, please contact us, as your order may not have gone through successfully.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Can I see my order online if I used Guest Checkout?
+                    </b>
+                    <p>
+                        No. However, you will receive an order confirmation via email, as well as tracking information once the order ships. If you aren’t receiving these emails, it may be that you have entered an invalid email address or that they may have ended up in your spam / junk mail folder.<br>If you are unable to locate your order confirmation email, please contact us so we may assist you.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="questionTab ratS14" id="returns">
+            <ul>
+                <li>
+                    <b>
+                        How do I return my order?
+                    </b>
+                    <p>
+                        You may return your unworn product within 30 days by following the steps below.
+                    </p>
+                    <ol>
+                        <li>
+                            1. Access our Returns page <a href="returns.html">HERE.</a>
+                        </li>
+                        <li>
+                            2. Select CREATE YOUR RETURN LABEL.
+                        </li>
+                        <li>
+                            3. Enter the requested order information in the provided fields and select GO.
+                        </li>
+                        <li>
+                            4. Select the items you would like to return and provide the reason. (optional)
+                        </li>
+                        <li>
+                            5. Print the provided return label and attach it to the package containing your return. Drop your package off at the nearest UPS location.
+                        </li>
+                    </ol>
+                    <p>
+                        Refunds are processed once we receive and process your return. It may take up to 7-10 business days for the refund to be processed.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Can I return my order to a Dr. Martens store?
+                    </b>
+                    <p>
+                        Online orders cannot be returned or exchanged at our Dr. Martens retail stores. You may initiate a return for your online order via our returns page.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Does Dr. Martens offer free online returns?
+                    </b>
+                    <div>
+                        We do not offer free online returns. By using our prepaid return label, you agree that $7 will be deducted from your refund. This label will only facilitate a return within the United States. Using our provided return label ensures the smoothest return process. If you are returning your order because there is a problem with your product, please <a href="contacts.html">contact us</a> for assistance.
+                    </div>
+                </li>
+                <li>
+                    <b>
+                        What items can I return?
+                    </b>
+                    <p>
+                        You may return your unworn purchase made on drmartens.com up to 30 days from your original order date for a refund.<br>All returns must be processed through our returns page and must be in their original, unworn condition, with the shoebox intact and tags attached. We recommend returning your product in the container in which it was shipped to you.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        How can I exchange my order?
+                    </b>
+                    <div>
+                        We do not offer exchanges. If you would like a different size or style, you may return your order and place a new order.<br>If there is a problem with your order or you were sent the wrong item, please <a href="contacts.html">contact us</a> with your order number and a picture of the issue, so we may assist you.
+                    </div>
+                </li>
+                <li>
+                    <b>
+                        How do I return an item that wasn't purchased directly from drmartens.com?
+                    </b>
+                    <p>
+                        We're unable to accept returns or exchanges made from third-party vendors or wholesalers, and online purchases cannot be returned or exchanged at Dr. Martens Retail Stores at this time.<br>You will need to directly contact the store that the item was originally purchased from to learn more about their return policy. We apologize for the inconvenience.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Will I get a refund for my expedited shipping costs?
+                    </b>
+                    <div>
+                        Expedited shipping costs will not be refunded upon return. If you didn't receive your package within the timeframe provided at checkout, please <a href="contacts.html">contact us</a> so we may assist you.<br>While orders with expedited shipping are prioritized, please anticipate at least one (1) business day for processing time.
+                    </div>
+                </li>
+                <li>
+                    <b>
+                        How long does it take to process my return?
+                    </b>
+                    <p>
+                        Once we receive and process your return, you will be refunded to your original form of payment.<br>We aim to process returns within 3 business days after we receive your package, but keep in mind that processing can sometimes take up to 7-10 business days from the date the package was marked as delivered.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="questionTab ratS14" id="delivery">
+            <ul>
+                <li>
+                    <b>
+                        What do I do if my package tracking says it was delivered, but I have not received it?
+                    </b>
+                    <p>
+                        If your package was marked as delivered but you have not received it, please contact us immediately. We will contact your carrier on your behalf and initiate a missing package investigation. This investigation may take up to 10 business days to conclude. Once the investigation concludes, we will either send you an expedited replacement package at no cost or process a full refund. Please reach out to us within 60 days of the delivery date if you have not received your order.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        What do I do if my package arrives damaged along with the contents inside, or items are missing from my package?
+                    </b>
+                    <p>
+                        If your package arrives damaged or there are items missing from your package, please contact us(페이지) immediately. Do not dispose of any of your packaging materials as a UPS investigator may retrieve it. We will be unable to assist you further if the package materials are thrown away.
+                    </p>
+                    <i>
+                        We will need you to provide the following photos so they can assist you:
+                    </i>
+                    <ol>
+                        <li>
+                            1. A close-up photo of the shipping label with tracking number (please zoom in enough to read the tracking number, which usually begins with 1Z)
+                        </li>
+                        <li>
+                            2. A close-up photo of the box manufacturer’s certificate (BMC), if available. The BMC is a round stamp that details either the bursting strength of the box or the edge crush rating of the box.
+                        </li>
+                        <li>
+                            3. Two photos displaying all six sides of the package (One photo should display the top and two sides. The second photo should display the bottom and the opposite sides.)
+                        </li>
+                    </ol>
+                    <p>
+                        Upon receiving pictures of the packaging, we will contact your carrier to open a damaged package investigation which may take up to 10 business days to conclude.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="questionTab ratS14" id="products">
+            <ul>
+                <li>
+                    <b>
+                        Can Dr. Martens repair my shoes?
+                    </b>
+                    <div>
+                        Unfortunately, we're unable to repair any of our styles, including attaching new soles, as we do not have a repair facility. We suggest contacting your local cobbler or shoe repair shop for assistance with repairs. If you believe the damage is due to a defect and falls within our limited 1-year warranty, please <a href="contacts.html">contact us</a> with pictures and proof of purchase so we may assist you.
+                    </div>
+                </li>
+                <li>
+                    <b>
+                        Does Dr. Martens offer half sizes?
+                    </b>
+                    <p>
+                        We only offer whole sizes. If you normally wear a half size, we recommend trying the closest size down as many styles tend to run large. However, the fit may vary slightly depending on the style.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        How can I find the correct laces for my shoes?
+                    </b>
+                    <p>
+                        You can find the correct shoelace laces length by counting the lace eyelets on your shoe and matching it with the corresponding lace length. Shoelaces in our online store will also have the recommended eyelet length in the product name.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        How does your sizing work?
+                    </b>
+                    <p>
+                        All our products here on the US site are listed in US sizing. For detailed information on our sizing, please refer to our Size Guide.(페이지) If you don't see what you're looking for, please contact us(페이지) so we may assist you.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Does Dr. Martens have a print catalog available?
+                    </b>
+                    <p>
+                        While we used to send out catalogs in the past, we have stopped doing so at this time as we are all digital.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        How to clean your boots with Wonder Balsam Wax.
+                    </b>
+                    <p>
+                        Our Wonder Balsam is formulated to nourish, condition, and protect your Dr. Martens! It is suitable for all leather except suede types. Not suitable for vegan materials.
+                    </p>
+                    <div>
+                        Check out the <a href="guidesWonderBalsam.html">guide linked</a> below for full instructions on how to apply our Wonder Balsam!
+                    </div>
+                </li>
+                <li>
+                    <b>
+                        How to clean your Dr. Martens with Dubbin Wax
+                    </b>
+                    <p>
+                        Our Dubbin Wax is a great way to soften, condition, waterproof, and stop the leather from drying and cracking on your Dr. Martens.<br>It is suitable for all of our oiled leathers.(Not suitable for suede, nubuck, patent leathers or any synthetic materials including vegan)
+                    </p>
+                    <div>
+                        Check out the <a href="guidesDubbinWax.html">guide linked</a> below for full instructions on how to apply our Dubbin Wax!
+                    </div>
+                </li>
+                <li>
+                    <b>
+                        How to protect your leather or suede boots & shoes
+                    </b>
+                    <p>
+                        Our Ultra Protector Spray is the perfect option!<br>(Not suitable for patent leathers or any synthetic materials including vegan.)
+                    </p>
+                    <div>
+                        Check out the <a href="guidesProtect.html">link</a> below for full instructions on how to apply our Ultra Protector Spray!
+                    </div>
+                </li>
+                <li>
+                    <b>
+                        How to Clean Patent Leather Dr. Martens Footwear
+                    </b>
+                    <p>
+                        Our Patent Cleaner gently cleans Patent Leather and vinyl footwear!<br>Suitable for all patent leathers, including vegan materials!
+                    </p>
+                    <div>
+                        Check out the <a href="guidesPatentLeather.html">link</a> below for full instructions on how to apply our Patent Leather Cleaner!
+                    </div>
+                </li>
+                <li>
+                    <b>
+                        How to Clean Suede Dr. Martens Footwear
+                    </b>
+                    <p>
+                        Our Suede Cleaner safely and effectively cleanse all types of suede footwear! It is Suitable for suede and nubuck leathers.<br>Not suitable for any synthetic materials including vegan.
+                    </p>
+                    <div>
+                        Check out the <a href="guidesCleanSuede.html">guide linked</a> below for full instructions on how to apply our Suede Cleaner!
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="questionTab ratS14" id="warranty">
+            <ul>
+                <li>
+                    <b>
+                        What is Dr. Martens warranty policy?
+                    </b>
+                    <p>
+                        Our products have a 1-year warranty that protects against manufacturer defects. Our warranty policy does not cover issues of comfort/sizing, normal wear & tear, or damage that is unrelated to a manufacturing defect such as accidental scuffs.<br>You can find more details about our Warranty Policy here!
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        How can I submit a warranty claim for my Dr. Martens product?
+                    </b>
+                    <i>
+                        To submit a warranty claim, please contact us and follow these steps:
+                    </i>
+                    <ol>
+                        <li>
+                            1. Provide a short message describing the issue and where you purchased your product. 
+                        </li>
+                        <li>
+                            2. Provide a clear picture of the defect and any relevant photos & receipts.  The Contact us form will allow up to 5 files to be attached. Please make sure the pictures are attached as .JPEG files as we cannot open .HEIC files.
+                        </li>
+                    </ol>
+                    <p>
+                        Once you've requested a claim, a representative will follow up to assist you as soon as possible.
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        For Life Collection Info
+                    </b>
+                    <p>
+                        After careful consideration, we've decided to discontinue to the For Life collection. The last day to purchase a For Life product with a lifetime guarantee was April 1st, 2018. The last day to register or activate your For Life product was May 31st, 2018.
+                    </p>
+                    <p>
+                        Are you a current For Life owner? Don't worry: we'll still honor all our existing For Life guarantees for products purchased before Aril 1st, 2018 and registered by May 31st, 2018.
+                    </p>
+                    <div>
+                        To make a claim for replacements, please send an email to <a href="mailto:forlifeprogram@drmartens.com">forlifeprogram@drmartens.com</a>.
+                    </div>
+                </li>
+                <li>
+                    <b>
+                        Does Dr. Martens offer a lifetime warranty?
+                    </b>
+                    <p>
+                        The only footwear we guarantee for life is from our discontinued For Life Collection. This line has historically been made up of several versions of our classic 1460 and 1461 that have additional comfort and durability features and are accompanied with registration materials when purchased. You can also tell that the shoes are For Life because they have the name embedded in a small square on the bottom sole.
+                    </p>
+                    <div>
+                        If you have a For Life product, that was registered before May 31st, 2018, and want to make a claim for replacement, please email <a href="mailto:forlifeprogram@drmartens.com">forlifeprogram@drmartens.com</a>.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="ratWRS12 footerTop">
+            <div>
+                <h3 class="WB">DR. MARTENS NEWSLETTER</h3>
+                <div>
+                    <input type="email" placeholder="E-mail address *" title="Input your E-mail address">
+                    <input type="submit" value="arrow_forward" class="material-symbols-outlined">
+                </div>
+                <ol>
+                    <li><a href="https://www.facebook.com/drmartens" target="_blank">facebook</a></li>
+                    <li><a href="https://x.com/drmartens/" target="_blank">twitter</a></li>
+                    <li><a href="https://www.instagram.com/drmartensusa/" target="_blank">instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@drmartens" target="_blank">tiktok</a></li>
+                    <li><a href="https://www.pinterest.co.uk/drmartens/" target="_blank">pinterest</a></li>
+                    <li><a href="https://www.youtube.com/user/DrMartensOfficial" target="_blank">youtube</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3 class="WB">
+                    DO YOU NEED HELP?
+                </h3>
+                <ul>
+                    <li><a href="tel:+822039086901">Call us 020-3908-6901</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="WB">
+                    EXCLUSIVE SERVICES
+                </h3>
+                <ul>
+                    <li><a href="sizeGuide.html">Size Guide</a></li>
+                    <li><a href="shipping.html">Shipping</a></li>
+                    <li><a href="returns.html">Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="WB">
+                    LEGAL TERMS AND CONDITIONS
+                </h3>
+                <ul>
+                    <li><a href="policy.html">Privacy and cookies policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="warranty.html">Warranty</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="WB">
+                    SECURE ONLINE SHOPPING
+                </h3>
+                <ol>
+                    <li>After pay</li>
+                    <li>Amex</li>
+                    <li>Apple pay</li>
+                    <li>Diners</li>
+                    <li>Discover</li>
+                    <li>Gift cards</li>
+                    <li>Klarna</li>
+                    <li>MC</li>
+                    <li>Paypal</li>
+                    <li>Pay with google</li>
+                    <li>Visa</li> 
+                </ol>
+            </div>
+        </div>
+        <div class="ratWRS12">
+            <p class="S10">© 2024 AIRWAIR INTL. LTD</p>
+            <a href="storeLocator.html">
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+                STORE LOCATOR
+            </a>
+            <p>SHIPPING TO: KOREA, REPUBLIC OF/ENGLISH</p>
+        </div>
+    </footer>
+</body>
+</html>

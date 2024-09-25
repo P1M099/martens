@@ -1,0 +1,1716 @@
+html,
+body {
+  height: 100%;
+}
+input[type='button']:not([class*='btn']){
+  background-color: transparent;
+  border: none;
+}
+input[type='button'][class*='Btn']{
+  cursor: pointer;
+}
+.material-icons-outlined {
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+[class*='btn']{
+  border-radius: 0;
+}
+.btn01 {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  line-height: 42px;
+  background-color: white;
+  border: 1px solid black;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+.btn01:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn02{
+  padding: 0 7px;
+}
+.btn05{
+  padding: 0 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.btn02,
+.btn05 {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  font-family: "Lato";
+  font-size: 15px;
+  line-height: 40px;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+.btn02:hover,
+.btn05:hover {
+  color: white;
+  background-color: black;
+}
+.btn02 span,
+.btn05 span {
+  margin-left: -24px;
+  vertical-align: -6px;
+  opacity: 0;
+  transition-property: margin-left, opacity;
+  transition-duration: 0.5s, 0.2s;
+}
+.btn02:hover span,
+.btn05:hover span {
+  margin-left: 0;
+  opacity: 1;
+}
+
+.btn03 {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  font-family: "Lato";
+  font-size: 15px;
+  line-height: 40px;
+  padding: 0 7px;
+  cursor: pointer;
+}
+.btn03 span{
+  vertical-align: -6px;
+}
+
+.btn04 {
+  background-color: black;
+  color: white;
+  border: none;
+  line-height: 45px;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+.btn04:hover{
+  background-color: #ffc233;
+  color: #1a1a1b;
+}
+
+[id$="Panel"] {
+  z-index: 9999;
+}
+
+@media screen and (max-width: 767px) {
+  #searchPanel > *,
+  header .gnb>*,
+  .productCategory ol,
+  .productCategory+span,
+  [class*='ListProductContainer'],
+  [class*='ProductDetailContainer'] [id$="Panel"],
+  [class*='ProductDetailContainer']>h2,
+  [class^='account']>.category,
+  [class^='account']>div:last-of-type>*,
+  [class^='check'],
+  [class^='finCheck'],
+  #muicheckPanel>*,
+  .shoppingBagContainer,
+  [class^='guidesList'],
+  .subRule [class^='sub']>*:not(img),
+  [class^='guidesArticle']>*:not(h2, video, .subRule),
+  .madeStrongContainer>*:not(h2, video),
+  .winterBootsContainer>*:not(h2),
+  [class^='wish'],
+  [class^='sign'],
+  [class^='footer'],
+  .storeLocatorContainer div input,
+  footer .footerTop>*,
+  footer>div>*:last-child {
+    padding: 0 3.57%;
+  }
+  [class*='Container']:not(.sliderContainer, [class*='ListProductContainer']){
+    padding-top: 81px;
+  }
+
+  #searchPanel {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 45px;
+    height: 100%;
+    display: none;
+  }
+  #searchPanel.active{
+    display: block;
+  }
+  #searchPanel div {
+    margin: 0 auto 25px;
+    border-bottom: 1px solid #4b4b4b;
+    line-height: 70px;
+  }
+  #searchPanel div input[type="search"] {
+    border: none;
+    width: 80%;
+    font-family: "Lato";
+    font-size: 18px;
+    color: #1b1b1b;
+    padding: 23px 0;
+    background-color: transparent;
+  }
+  #searchPanel div input[type="search"]::placeholder {
+    font-family: "Lato";
+    font-size: 18px;
+    color: #1b1b1b;
+  }
+  #searchPanel div input[type="button"] {
+    margin: 25px 0;
+    line-height: 22px;
+    display: block;
+    float: right;
+    text-align: right;
+    width: 20%;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-left: 1px solid black;
+  }
+  #searchPanel ul {
+    margin: 0 auto;
+    list-style: none;
+    clear: both;
+  }
+  #searchPanel ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  #searchPanel ul li a {
+    text-decoration: none;
+  }
+
+
+  #shopping_bagPanel {
+    position: relative;
+  }
+  #shopping_bagPanel div {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+  }
+  #shopping_bagPanel > div:not([class="active"]) {
+    display: none;
+  }
+  #shopping_bagPanel div:first-child {
+    line-height: 65px;
+    text-align: center;
+    right: 0;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #shopping_bagPanel div:last-child {
+    padding: 20px 3.25%;
+    box-sizing: border-box;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  #shopping_bagPanel.active div:last-child{
+    display: block;
+  }
+  #shopping_bagPanel div:last-child ul {
+    list-style: none;
+  }
+  #shopping_bagPanel div:last-child ul li::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #shopping_bagPanel div:last-child ul li h2 {
+    float: left;
+    margin-bottom: 15px;
+  }
+  #shopping_bagPanel div:last-child ul li>input[type="button"] {
+    float: right;
+    margin-bottom: 15px;
+  }
+  #shopping_bagPanel div:last-child ul li figure::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #shopping_bagPanel div:last-child ul li figure {
+    clear: both;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8dce1;
+  }
+  #shopping_bagPanel div:last-child ul li figure > * {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  #shopping_bagPanel div:last-child ul li figure img {
+    width: 43%;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption {
+    margin-left: 10px;
+    width: calc(57% - 10px);
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl dt {
+    line-height: 20px;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl *{
+    margin-bottom: 10px;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl dd input[type="button"] {
+    background-color: inherit;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child span {
+    display: block;
+    padding: 20px 0;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child span strong {
+    float: right;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child a:first-of-type {
+    margin-bottom: 15px;
+  }
+
+  header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 9000;
+  }
+  header .gnb div:first-of-type {
+    line-height: 80px;
+    height: 80px;
+    border-bottom: 1px solid #d8dce1;
+  }
+  header .gnb div:first-of-type:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  header .gnb div:first-of-type > * {
+    float: left;
+  }
+  header .gnb div:first-of-type h1 {
+    width: 31%;
+    max-height: 50px;
+  }
+  header .gnb div:first-of-type h1 img {
+    max-width: 88px;
+    width: 100%;
+    vertical-align: middle;
+  }
+  header .gnb div:first-of-type nav{
+    display: none;
+  }
+
+  header .gnb div:first-of-type ul {
+    width: 69%;
+    text-align: right;
+    list-style: none;
+    height: 80px;
+  }
+  header .gnb div:first-of-type ul li {
+    display: inline-block;
+  }
+  header .gnb div:first-of-type ul li:nth-child(2){
+    display: none;
+  }
+  header .gnb div:first-of-type ul li:not(:first-child) {
+    margin-left: 3.25%;
+  }
+  header .gnb div:first-of-type ul li [class^="material"] {
+    font-size: 22px;
+    cursor: pointer;
+    display: block;
+    line-height: 80px;
+    padding: 0;
+  }
+  header .gnb div:first-of-type ul li:not(:nth-child(2)) [class^="material"],
+  header .gnb .mui>a:last-of-type span {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  }
+  header .gnb div:first-of-type ul li:nth-child(2) [class^="material"],
+  header .gnb .mui>a:first-of-type span {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+  header .gnb div:first-of-type ul li a{
+    text-decoration: none;
+    text-align: left;
+  }
+
+  header .gnb .mui{
+    display: none;
+    position: fixed;
+    background-color: white;
+    width: 93.5%;
+    height: 100%;
+    top: 81px;
+    left: 0;
+  }
+  header .gnb .mui.active {
+    display: block;
+  }
+  header .gnb .mui input[type='button']{
+    position: fixed;
+    right: 3.57%;
+    top: 30px;
+    text-align: right;
+    display: none;
+  }
+  header .gnb .mui.active input[type='button']{
+    display: block;
+  }
+  header .gnb .mui nav{
+    padding: 40px 0;
+  }
+  header .gnb .mui nav ul li{
+    width: 100%;
+  }
+  header .gnb .mui nav ul li:not(:last-child){
+    margin-bottom: 35px;
+  }
+  header .gnb .mui nav ul li a{
+    display: block;
+    background: url('../images/pagerBtn.svg') right center no-repeat;
+    text-decoration: none;
+  }
+  header .gnb .mui>a{
+    display: block;
+    text-decoration: none;
+  }
+  header .gnb .mui>a:not(:last-of-type){
+    margin-bottom: 35px;
+  }
+  header .gnb .mui>a span{
+    vertical-align: middle;
+    margin-right: 2.6%;
+  }
+
+  #personPanel {
+    position: relative;
+    max-width: 1640px;
+    margin: 0 auto;
+    z-index: 9999;
+    display: none;
+  }
+  #personPanel.active{
+    display: block;
+  }
+  #personPanel ul {
+    list-style: none;
+    position: absolute;
+    background-color: white;
+    width: 160px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    right: 0;
+  }
+  #personPanel ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  #personPanel ul li a {
+    text-decoration: none;
+    color: #b1b1b1;
+  }
+  #personPanel ul li:hover a {
+    color: black;
+    font-weight: 700;
+  }
+
+  footer {
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  footer ul,
+  footer ol {
+    list-style: none;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer .footerTop > div:first-child h3 {
+    margin-bottom: 25px;
+  }
+  footer .footerTop > div:first-child div {
+    border-bottom: 1px solid black;
+    margin-bottom: 65px;
+    position: relative;
+  }
+  footer .footerTop > div:first-child div:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer .footerTop > div:first-child div input{
+    line-height: 28px;
+  }
+  footer .footerTop > div:first-child div input[type="email"] {
+    border: none;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+  }
+  footer .footerTop > div:first-child div input[type="submit"] {
+    cursor: pointer;
+    font-size: 26px;
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  footer .footerTop > div ol:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer .footerTop > div:first-child ol{
+    width: 71%;
+    margin-bottom: 70px;
+  }
+  footer .footerTop > div:first-child ol li {
+    text-indent: -9999px;
+    float: left;
+    width: 16.66%;
+    line-height: 18px;
+    box-sizing: border-box;
+  }
+  footer .footerTop > div:first-child ol li a {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+  footer .footerTop > div:first-child ol li:hover a {
+    opacity: 1;
+  }
+  footer .footerTop > div:first-child ol li:nth-child(1) a {
+    background-image: url("../images/sns_Facebook_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(2) a {
+    background-image: url("../images/sns_x_logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(3) a {
+    background-image: url("../images/sns_Instagram_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(4) a {
+    background-image: url("../images/sns_tiktok_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(5) a {
+    background-image: url("../images/sns_pinterest_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(6) a {
+    background-image: url("../images/sns_youtube_logo.svg");
+  }
+
+  footer .footerTop > div:not(:first-child){
+    border-top: 1px solid #d8dce1;
+  }
+  footer .footerTop > div:not(:first-child) h3{
+    padding: 30px 0;
+    position: relative;
+  }
+  footer .footerTop > div:not(:first-child) h3:after{
+    content: url('../images/pagerBtn.svg');
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    transform: rotate(90deg);
+    transition: transform 0.25s ease-in-out;
+  }
+  footer .footerTop > div:not(:first-child).active h3:after{
+    transform: rotate(270deg);
+  }
+  footer .footerTop div ul li{
+    opacity: 0;
+    line-height: 0;
+    margin: 0;
+    transition: all 0.5s ease-out;
+  }
+  footer .footerTop div.active ul li{
+    opacity: 1;
+  }
+  footer .footerTop div.active ul li:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  footer .footerTop div:last-child.active ol,
+  footer .footerTop div.active ul li:last-child{
+    padding-bottom: 30px;
+  }
+  footer .footerTop div ul li a{
+    display: none;
+  }
+  footer .footerTop div.active ul li a{
+    display: block;
+  }
+
+  footer .footerTop div:last-child ol{
+    padding-bottom: 0;
+    transition: padding-bottom 0.5s ease-out;
+  }
+  footer .footerTop div:last-child ol li {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 26px;
+    text-indent: -9999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+  }
+  footer .footerTop div:last-child.active ol li{
+    display: block;
+  }
+  footer .footerTop div:last-child ol li:nth-child(n + 5) {
+    margin-top: 10px;
+  }
+  footer .footerTop div:last-child ol li:nth-child(1) {
+    background-image: url("../images/creditAfterpaytouch.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(2) {
+    background-image: url("../images/creditAmex.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(3) {
+    background-image: url("../images/creditApplepay.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(4) {
+    background-image: url("../images/creditDiners.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(5) {
+    background-image: url("../images/creditDiscover.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(6) {
+    background-image: url("../images/creditGiftcard.png");
+  }
+  footer .footerTop div:last-child ol li:nth-child(7) {
+    background-image: url("../images/creditKlarna.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(8) {
+    background-image: url("../images/creditMc.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(9) {
+    background-image: url("../images/creditPaypal.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(10) {
+    background-image: url("../images/creditPaywithgoogle.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(11) {
+    background-image: url("../images/creditVisa.svg");
+  }
+  footer > div:last-child {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer > div:last-child>*{
+    line-height: 70px;
+    border-top: 1px solid #d8dce1;
+  }
+  footer > div:last-child p:first-child{
+    order: 2;
+  }
+  footer > div:last-child a {
+    order: 0;
+  }
+  footer > div:last-child a span {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+    vertical-align: -8px;
+  }
+  footer > div:last-child p:last-child {
+    order: 1;
+  }
+}
+/* ? mobile */
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  #searchPanel > *,
+  header .gnb>*,
+  .productCategory ol,
+  .productCategory+span,
+  [class*='ListProductContainer'],
+  [class*='ProductDetailContainer'] [id$="Panel"],
+  [class*='ProductDetailContainer']>h2,
+  [class*='ProductDetailContainer']>h2+ul,
+  [class^='account']>.category,
+  [class^='account']>div:last-of-type>*,
+  [class^='check'],
+  [class^='finCheck'],
+  #muicheckPanel>*,
+  .shoppingBagContainer,
+  [class^='guidesList'],
+  [class^='guidesArticle']>*:not(h2, video),
+  .madeStrongContainer>*:not(h2, video),
+  .winterBootsContainer>*:not(h2),
+  [class^='wish'],
+  [class^='sign'],
+  [class^='footer'],
+  .storeLocatorContainer,
+  footer .footerTop>*,
+  footer>div>*:last-child {
+    padding: 0 3.125%;
+  }
+  [class^='finCheck']{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  [class*='Container']:not(.sliderContainer, [class*='ListProductContainer']){
+    padding-top: 101px;
+  }
+
+  #searchPanel {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 45px;
+    height: 100%;
+    display: none;
+  }
+  #searchPanel.active{
+    display: block;
+  }
+  #searchPanel div {
+    margin: 0 auto 25px;
+    border-bottom: 1px solid #4b4b4b;
+    line-height: 70px;
+  }
+  #searchPanel div input[type="search"] {
+    border: none;
+    width: 90%;
+    font-family: "Lato";
+    font-size: 18px;
+    color: #1b1b1b;
+    padding: 23px 0;
+    background-color: transparent;
+  }
+  #searchPanel div input[type="search"]::placeholder {
+    font-family: "Lato";
+    font-size: 18px;
+    color: #1b1b1b;
+  }
+  #searchPanel div input[type="button"] {
+    margin: 25px 0;
+    line-height: 22px;
+    display: block;
+    float: right;
+    text-align: right;
+    width: 10%;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-left: 1px solid black;
+  }
+  #searchPanel ul {
+    margin: 0 auto;
+    list-style: none;
+    clear: both;
+  }
+  #searchPanel ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  #searchPanel ul li a {
+    text-decoration: none;
+  }
+
+
+  #shopping_bagPanel {
+    position: relative;
+  }
+  #shopping_bagPanel div {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+  }
+  #shopping_bagPanel > div:not([class="active"]) {
+    display: none;
+  }
+  #shopping_bagPanel div:first-child {
+    line-height: 65px;
+    text-align: center;
+    right: 0;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #shopping_bagPanel div:last-child {
+    padding: 20px 24px;
+    box-sizing: border-box;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  #shopping_bagPanel.active div:last-child{
+    display: block;
+  }
+  #shopping_bagPanel div:last-child ul {
+    list-style: none;
+  }
+  #shopping_bagPanel div:last-child ul li::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #shopping_bagPanel div:last-child ul li h2 {
+    float: left;
+    margin-bottom: 15px;
+  }
+  #shopping_bagPanel div:last-child ul li>input[type="button"] {
+    float: right;
+    margin-bottom: 15px;
+  }
+  #shopping_bagPanel div:last-child ul li figure::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #shopping_bagPanel div:last-child ul li figure {
+    clear: both;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8dce1;
+  }
+  #shopping_bagPanel div:last-child ul li figure > * {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  #shopping_bagPanel div:last-child ul li figure img {
+    width: 20%;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption {
+    margin-left: 10px;
+    width: calc(80% - 10px);
+    max-width: 270px;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl dt {
+    line-height: 20px;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl *:nth-of-type(1),
+  #shopping_bagPanel div:last-child ul li figure figcaption dl *:nth-of-type(2) {
+    margin-bottom: 10px;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl *:nth-of-type(3) {
+    margin-bottom: 45px;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl dd input[type="button"] {
+    background-color: inherit;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child span {
+    display: block;
+    padding: 20px 0;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child span strong {
+    float: right;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child a:first-of-type {
+    margin-bottom: 15px;
+  }
+
+  header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 9000;
+  }
+  header .gnb div:first-of-type {
+    line-height: 100px;
+    height: 100px;
+    border-bottom: 1px solid #d8dce1;
+  }
+  header .gnb div:first-of-type:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  header .gnb div:first-of-type > * {
+    float: left;
+  }
+  header .gnb div:first-of-type h1 {
+    width: 14%;
+    max-height: 50px;
+  }
+  header .gnb div:first-of-type h1 img {
+    max-width: 126px;
+    width: 100%;
+    vertical-align: middle;
+  }
+  header .gnb div:first-of-type nav{
+    display: none;
+  }
+
+  header .gnb div:first-of-type ul {
+    width: 86%;
+    text-align: right;
+    list-style: none;
+    height: 100px;
+  }
+  header .gnb div:first-of-type ul li {
+    display: inline-block;
+  }
+  header .gnb div:first-of-type ul li:nth-child(2){
+    display: none;
+  }
+  header .gnb div:first-of-type ul li:not(:first-child) {
+    margin-left: 3.25%;
+  }
+  header .gnb div:first-of-type ul li [class^="material"] {
+    font-size: 22px;
+    cursor: pointer;
+    display: block;
+    line-height: 100px;
+    padding: 0;
+  }
+  header .gnb div:first-of-type ul li:not(:nth-child(2)) [class^="material"],
+  header .gnb .mui>a:last-of-type span {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  }
+  header .gnb div:first-of-type ul li:nth-child(2) [class^="material"],
+  header .gnb .mui>a:first-of-type span {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+  header .gnb div:first-of-type ul li a{
+    text-decoration: none;
+    text-align: left;
+  }
+
+  header .gnb .mui{
+    display: none;
+    position: fixed;
+    background-color: white;
+    width: 93.75%;
+    height: 100%;
+    top: 101px;
+    left: 0;
+  }
+  header .gnb .mui.active {
+    display: block;
+  }
+  header .gnb .mui input[type='button']{
+    position: fixed;
+    right: 3.125%;
+    top: 40px;
+    text-align: right;
+    display: none;
+  }
+  header .gnb .mui.active input[type='button']{
+    display: block;
+  }
+  header .gnb .mui nav{
+    padding: 40px 0 120px;
+  }
+  header .gnb .mui nav ul li{
+    width: 100%;
+  }
+  header .gnb .mui nav ul li:not(:last-child){
+    margin-bottom: 35px;
+  }
+  header .gnb .mui nav ul li a{
+    display: block;
+    background: url('../images/pagerBtn.svg') right center no-repeat;
+    text-decoration: none;
+  }
+  header .gnb .mui>a{
+    display: block;
+    text-decoration: none;
+  }
+  header .gnb .mui>a:not(:last-of-type){
+    margin-bottom: 35px;
+  }
+  header .gnb .mui>a span{
+    vertical-align: middle;
+    margin-right: 2.6%;
+  }
+
+  #personPanel {
+    position: relative;
+    max-width: 1640px;
+    margin: 0 auto;
+    z-index: 9999;
+    display: none;
+  }
+  #personPanel.active{
+    display: block;
+  }
+  #personPanel ul {
+    list-style: none;
+    position: absolute;
+    background-color: white;
+    width: 160px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    right: 0;
+  }
+  #personPanel ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  #personPanel ul li a {
+    text-decoration: none;
+    color: #b1b1b1;
+  }
+  #personPanel ul li:hover a {
+    color: black;
+    font-weight: 700;
+  }
+
+  footer {
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  footer ul,
+  footer ol {
+    list-style: none;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer .footerTop > div:first-child h3 {
+    margin-bottom: 25px;
+  }
+  footer .footerTop > div:first-child div {
+    border-bottom: 1px solid black;
+    margin-bottom: 65px;
+    position: relative;
+  }
+  footer .footerTop > div:first-child div:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer .footerTop > div:first-child div input{
+    line-height: 28px;
+  }
+  footer .footerTop > div:first-child div input[type="email"] {
+    border: none;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+  }
+  footer .footerTop > div:first-child div input[type="submit"] {
+    cursor: pointer;
+    font-size: 26px;
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  footer .footerTop > div ol:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer .footerTop > div:first-child ol{
+    width: 30%;
+    margin-bottom: 70px;
+  }
+  footer .footerTop > div:first-child ol li {
+    text-indent: -9999px;
+    float: left;
+    width: 16.66%;
+    line-height: 18px;
+    box-sizing: border-box;
+  }
+  footer .footerTop > div:first-child ol li a {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+  footer .footerTop > div:first-child ol li:hover a {
+    opacity: 1;
+  }
+  footer .footerTop > div:first-child ol li:nth-child(1) a {
+    background-image: url("../images/sns_Facebook_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(2) a {
+    background-image: url("../images/sns_x_logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(3) a {
+    background-image: url("../images/sns_Instagram_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(4) a {
+    background-image: url("../images/sns_tiktok_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(5) a {
+    background-image: url("../images/sns_pinterest_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(6) a {
+    background-image: url("../images/sns_youtube_logo.svg");
+  }
+
+  footer .footerTop > div:not(:first-child){
+    border-top: 1px solid #d8dce1;
+  }
+  footer .footerTop > div:not(:first-child) h3{
+    padding: 30px 0;
+    position: relative;
+  }
+  footer .footerTop > div:not(:first-child) h3:after{
+    content: url('../images/pagerBtn.svg');
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    transform: rotate(90deg);
+    transition: transform 0.25s ease-in-out;
+  }
+  footer .footerTop > div:not(:first-child).active h3:after{
+    transform: rotate(270deg);
+  }
+  footer .footerTop div ul li{
+    opacity: 0;
+    line-height: 0;
+    margin: 0;
+    transition: all 0.5s ease-out;
+  }
+  footer .footerTop div.active ul li{
+    opacity: 1;
+  }
+  footer .footerTop div.active ul li:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  footer .footerTop div:last-child.active ol,
+  footer .footerTop div.active ul li:last-child{
+    padding-bottom: 30px;
+  }
+  footer .footerTop div ul li a{
+    display: none;
+  }
+  footer .footerTop div.active ul li a{
+    display: block;
+  }
+
+  footer .footerTop div:last-child ol{
+    padding-bottom: 0;
+  }
+  footer .footerTop div:last-child ol li {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 26px;
+    text-indent: -9999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+  }
+  footer .footerTop div:last-child.active ol li{
+    display: block;
+  }
+  footer .footerTop div:last-child ol li:nth-child(n + 5) {
+    margin-top: 10px;
+  }
+  footer .footerTop div:last-child ol li:nth-child(1) {
+    background-image: url("../images/creditAfterpaytouch.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(2) {
+    background-image: url("../images/creditAmex.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(3) {
+    background-image: url("../images/creditApplepay.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(4) {
+    background-image: url("../images/creditDiners.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(5) {
+    background-image: url("../images/creditDiscover.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(6) {
+    background-image: url("../images/creditGiftcard.png");
+  }
+  footer .footerTop div:last-child ol li:nth-child(7) {
+    background-image: url("../images/creditKlarna.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(8) {
+    background-image: url("../images/creditMc.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(9) {
+    background-image: url("../images/creditPaypal.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(10) {
+    background-image: url("../images/creditPaywithgoogle.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(11) {
+    background-image: url("../images/creditVisa.svg");
+  }
+  footer > div:last-child {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer > div:last-child>*{
+    line-height: 70px;
+    border-top: 1px solid #d8dce1;
+  }
+  footer > div:last-child p:first-child{
+    order: 2;
+  }
+  footer > div:last-child a {
+    order: 0;
+  }
+  footer > div:last-child a span {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+    vertical-align: -8px;
+  }
+  footer > div:last-child p:last-child {
+    order: 1;
+  }
+}
+/* ? tablet */
+
+@media screen and (min-width: 1280px) {
+  #searchPanel > *,
+  header .gnb,
+  .mainContainer,
+  [class^='guidesList'],
+  [class^='wish'],
+  footer {
+    max-width: 1640px;
+    padding: 0 1%;
+  }
+  .productCategory ol,
+  .productCategory+span,
+  [class*='ListProductContainer'],
+  [class*='ProductDetailContainer']>h2{
+    max-width: 1880px;
+    margin: 0 auto;
+  }
+  .storeLocatorContainer{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+  [class^='check']{
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+  .shoppingBagContainer{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+  [class^='footer']{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+  [class^='guidesArticle']>*:not(h2),
+  .madeStrongContainer>*:not(h2),
+  .winterBootsContainer>*:not(h2){
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+  [class^='finCheck']{
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  [class*='ProductDetailContainer'] [id$="Panel"]{
+    max-width: 960px;
+    box-shadow: -15px 0 25px rgba(0, 0, 0, 0.2);
+  }
+  [class*='ProductContainer'] [id$="Panel"] .panelWrapper{
+    max-width: 746px;
+    margin: 0 auto;
+  }
+  [class^='sign']{
+    max-width: 460px;
+    margin: 0 auto;
+  }
+  [class*='Container']:not([class*='ListProductContainer']){
+    padding-top: 101px;
+  }
+
+  #searchPanel {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 45px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+    top: -100%;
+    transition: top 0.5s ease-in-out;
+  }
+  #searchPanel.active{
+    top: 0;
+  }
+  #searchPanel div {
+    margin: 0 auto 25px;
+    border-bottom: 1px solid #4b4b4b;
+    line-height: 70px;
+  }
+  #searchPanel div input[type="search"] {
+    border: none;
+    width: 95%;
+    font-family: "Lato";
+    font-size: 18px;
+    color: #1b1b1b;
+    padding: 23px 0;
+  }
+  #searchPanel div input[type="search"]::placeholder {
+    font-family: "Lato";
+    font-size: 18px;
+    color: #1b1b1b;
+  }
+  #searchPanel div input[type="button"] {
+    margin: 25px 0;
+    line-height: 22px;
+    display: block;
+    float: right;
+    width: 5%;
+    box-sizing: border-box;
+    border-left: 1px solid black;
+  }
+  #searchPanel ul {
+    margin: 0 auto;
+    list-style: none;
+    clear: both;
+  }
+  #searchPanel ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  #searchPanel ul li a {
+    text-decoration: none;
+  }
+
+
+  #shopping_bagPanel {
+    position: relative;
+  }
+  #shopping_bagPanel div {
+    position: fixed;
+    top: 100px;
+    width: 500px;
+    background-color: white;
+  }
+  #shopping_bagPanel > div:not([class="active"]) {
+    display: none;
+  }
+  #shopping_bagPanel div:first-child {
+    line-height: 65px;
+    text-align: center;
+    right: 0;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #shopping_bagPanel div:last-child {
+    padding: 20px 20px 95px;
+    box-sizing: border-box;
+    height: 100%;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+    box-shadow: 0px 13px 15px rgba(0, 0, 0, 0.2);
+  }
+  #shopping_bagPanel.active div:last-child{
+    right: 0;
+  }
+  #shopping_bagPanel div:last-child ul {
+    list-style: none;
+    height: 100%;
+    position: relative;
+  }
+  #shopping_bagPanel div:last-child ul li::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 95px;
+  }
+  #shopping_bagPanel div:last-child ul li h2 {
+    float: left;
+  }
+  #shopping_bagPanel div:last-child ul li>input[type="button"] {
+    float: right;
+  }
+  #shopping_bagPanel div:last-child ul li figure::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #shopping_bagPanel div:last-child ul li figure {
+    padding: 40px 0 0;
+  }
+  #shopping_bagPanel div:last-child ul li figure > * {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  #shopping_bagPanel div:last-child ul li figure img {
+    max-width: 175px;
+    width: 48%;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption {
+    margin-left: 20px;
+    width: calc(52% - 20px);
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl dt {
+    line-height: 20px;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl *:nth-of-type(1),
+  #shopping_bagPanel div:last-child ul li figure figcaption dl *:nth-of-type(2) {
+    margin-bottom: 10px;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl *:nth-of-type(3) {
+    margin-bottom: 45px;
+  }
+  #shopping_bagPanel div:last-child ul li figure figcaption dl dd input[type="button"] {
+    background-color: inherit;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child span {
+    display: block;
+    margin-bottom: 15px;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child span strong {
+    float: right;
+  }
+  #shopping_bagPanel div:last-child ul li:last-child a:first-of-type {
+    margin-bottom: 15px;
+  }
+
+  header {
+    border-bottom: 1px solid #d8dce1;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 9000;
+  }
+  header .gnb {
+    margin: 0 auto;
+    line-height: 100px;
+  }
+  header .gnb div:first-of-type:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  header .gnb div:first-of-type > * {
+    float: left;
+  }
+  header .gnb div:first-of-type h1 {
+    width: 14%;
+    max-height: 50px;
+  }
+  header .gnb div:first-of-type h1 img {
+    max-width: 126px;
+    width: 100%;
+    vertical-align: middle;
+  }
+  header .gnb div:first-of-type nav {
+    width: 78%;
+  }
+  header .gnb div:first-of-type nav ul li {
+    display: inline-block;
+  }
+  header .gnb div:first-of-type nav ul li:not(:first-child) {
+    margin-left: 1.5%;
+  }
+  header .gnb div:first-of-type nav ul li::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid black;
+    margin-top: -27px;
+    width: 0%;
+    transition: width 0.5s ease-out;
+  }
+  header .gnb div:first-of-type nav ul li:hover::after {
+    width: 100%;
+  }
+  header .gnb div:first-of-type nav ul li a {
+    text-decoration: none;
+  }
+
+  header .gnb div:first-of-type > ul {
+    width: 8%;
+    text-align: right;
+    list-style: none;
+  }
+  header .gnb div:first-of-type > ul:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  header .gnb div:first-of-type > ul li {
+    float: left;
+    width: 22%;
+  }
+  header .gnb div:first-of-type > ul li:not(:first-child) {
+    margin-left: 4%;
+  }
+  header .gnb div:first-of-type > ul li:last-child{
+    display: none;
+  }
+  header .gnb div:first-of-type > ul li [class^="material"] {
+    font-size: 22px;
+    cursor: pointer;
+    display: block;
+    line-height: 100px;
+    padding: 0;
+  }
+  header .gnb div:first-of-type > ul li:not(:nth-child(2)) [class^="material"] {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  }
+  header .gnb div:first-of-type > ul li:nth-child(2) [class^="material"] {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+  header .gnb div:first-of-type > ul li a{
+    text-decoration: none;
+    text-align: left;
+  }
+  header .mui {
+    display: none;
+  }
+
+  #personPanel {
+    position: relative;
+    max-width: 1640px;
+    margin: 0 auto;
+    z-index: 9999;
+    display: none;
+  }
+  #personPanel.active{
+    display: block;
+  }
+  #personPanel ul {
+    list-style: none;
+    position: absolute;
+    background-color: white;
+    width: 160px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    right: 0;
+  }
+  #personPanel ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  #personPanel ul li a {
+    text-decoration: none;
+    color: #b1b1b1;
+  }
+  #personPanel ul li:hover a {
+    color: black;
+    font-weight: 700;
+  }
+
+  footer {
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+  footer ul,
+  footer ol {
+    list-style: none;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer .footerTop {
+    margin-bottom: 50px;
+  }
+  footer .footerTop:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer .footerTop > div {
+    float: left;
+  }
+  footer .footerTop > div:first-child {
+    width: 20.5%;
+    margin-right: 11%;
+  }
+  footer .footerTop > div:not(:first-child),
+  footer .footerTop > div:not(:last-child) {
+    width: 17.5%;
+  }
+  footer .footerTop > div:last-child {
+    width: 16%;
+  }
+  footer .footerTop > div h3 {
+    margin-bottom: 25px;
+  }
+  footer .footerTop > div:first-child div {
+    border-bottom: 1px solid black;
+    margin-bottom: 65px;
+    position: relative;
+  }
+  footer .footerTop > div:first-child div:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer .footerTop > div:first-child div input{
+    line-height: 28px;
+  }
+  footer .footerTop > div:first-child div input[type="email"] {
+    border: none;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+  }
+  footer .footerTop > div:first-child div input[type="submit"] {
+    cursor: pointer;
+    font-size: 26px;
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  footer .footerTop > div ol:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer .footerTop > div:first-child ol li {
+    text-indent: -9999px;
+    float: left;
+    width: 16.66%;
+    line-height: 18px;
+    box-sizing: border-box;
+  }
+  footer .footerTop > div:first-child ol li a {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+  footer .footerTop > div:first-child ol li:hover a {
+    opacity: 1;
+  }
+  footer .footerTop > div:first-child ol li:nth-child(1) a {
+    background-image: url("../images/sns_Facebook_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(2) a {
+    background-image: url("../images/sns_x_logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(3) a {
+    background-image: url("../images/sns_Instagram_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(4) a {
+    background-image: url("../images/sns_tiktok_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(5) a {
+    background-image: url("../images/sns_pinterest_Logo.svg");
+  }
+  footer .footerTop > div:first-child ol li:nth-child(6) a {
+    background-image: url("../images/sns_youtube_logo.svg");
+  }
+
+  footer .footerTop div ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  footer .footerTop div:last-child ol li {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 26px;
+    text-indent: -9999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  footer .footerTop div:last-child ol li:nth-child(n + 5) {
+    margin-top: 10px;
+  }
+  footer .footerTop div:last-child ol li:nth-child(1) {
+    background-image: url("../images/creditAfterpaytouch.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(2) {
+    background-image: url("../images/creditAmex.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(3) {
+    background-image: url("../images/creditApplepay.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(4) {
+    background-image: url("../images/creditDiners.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(5) {
+    background-image: url("../images/creditDiscover.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(6) {
+    background-image: url("../images/creditGiftcard.png");
+  }
+  footer .footerTop div:last-child ol li:nth-child(7) {
+    background-image: url("../images/creditKlarna.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(8) {
+    background-image: url("../images/creditMc.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(9) {
+    background-image: url("../images/creditPaypal.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(10) {
+    background-image: url("../images/creditPaywithgoogle.svg");
+  }
+  footer .footerTop div:last-child ol li:nth-child(11) {
+    background-image: url("../images/creditVisa.svg");
+  }
+  footer > div:last-child {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #d8dce1;
+    line-height: 55px;
+  }
+  footer > div:last-child:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer > div:last-child * {
+    float: left;
+  }
+  footer > div:last-child p:first-of-type {
+    width: 65.5%;
+  }
+  footer > div:last-child a {
+    width: 12%;
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #d8dce1;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  footer > div:last-child a span {
+    line-height: 55px;
+    font-size: 20px;
+    padding-left: 15%;
+    margin-right: -10%;
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  }
+  footer > div:last-child p:last-child {
+    width: 22.5%;
+    text-align: center;
+  }
+}

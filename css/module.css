@@ -1,0 +1,170 @@
+[class*=cab]{
+    font-family: 'Cabin';
+}
+[class*=rat]{
+    font-family: 'Lato';
+}
+
+[class*=WL]{
+    font-weight: 300;
+}
+[class*=WR]{
+    font-weight: 400;
+}
+[class*=WB]{
+    font-weight: 700;
+}
+
+[class*=S10]{
+    font-size: 10px;
+}
+[class*=S11]{
+    font-size: 11px;
+}
+[class*=S12]{
+    font-size: 12px;
+}
+[class*=S14]{
+    font-size: 14px;
+}
+[class*=S15]{
+    font-size: 15px;
+}
+[class*=S16]{
+    font-size: 16px;
+}
+[class*=S18]{
+    font-size: 18px;
+}
+[class*=S20]{
+    font-size: 20px;
+}
+[class*=S32]{
+    font-size: 32px;
+}
+[class*=S50]{
+    font-size: 50px;
+}
+
+.colorBlack{
+    background-color: #000;
+}
+.colorWhite{
+    background-color: #fff;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.colorRed{
+    background-color: #6D2123;
+}
+.colorZB{
+    background-color: #C4CEE9;
+}
+.colorST{
+    background-color: #B3976F;
+}
+.colorMO{
+    background-color: #6F7247;
+}
+.colorVT{
+    background-color: #DBCCC5;
+}
+.colorSaT{
+    background-color: #C78575;
+}
+.colorOlive{
+    background-color: #998B6E;
+}
+.colorLilac{
+    background-color: #CDBACE;
+}
+.colorSand{
+    background-color: #E5DCCD;
+}
+.colorCG{
+    background-color: #CFCECD;
+}
+.colorPB{
+    background-color: #ECE3D4;
+}
+.colorPeB{
+    background-color: #F3CFC1;
+}
+.colorTan{
+    background-color: #9D5231;
+}
+.colorDB{
+    background-color: #3E2822;
+}
+.colorGunmetal{
+    background-color: #6A6363;
+}
+.colorDMSO{
+    background-color: #756949;
+}
+.colorLG{
+    background-color: #CED290;
+}
+.colorPeBr{
+    background-color: #BE5F17;
+}
+.colorHT{
+    background-color: #864739;
+}
+.colorDG{
+    background-color: #3B372C;
+}
+.colorMP{
+    background-color: #AA5B83;
+}
+.colorBlue{
+    background-color: #3F92C4;
+}
+.colorPurple{
+    background-color: #734EA8;
+}
+.colorPink{
+    background-color: #F8599F;
+}
+.colorAO{
+    background-color: #B89138;
+}
+.colorCR{
+    background-color: #541613;
+}
+.colorPO{
+    background-color: #BEAF84;
+}
+.colorRP{
+    background-color: #433350;
+}
+.colorTP{
+    background-color: #F378AD;
+}
+.colorPP{
+    background-color: #E6CED6;
+}
+.colorTG{
+    background-color: #0D959D;
+}
+.colorCoral{
+    background-color: #F7AC92;
+}
+.colorBrown{
+    background-color: #4D372B;
+}
+.colorNG{
+    background-color: #9E9485;
+}
+.colorPisa{
+    background-color: #D5C6BD;
+}
+.colorDeB{
+    background-color: #526A8E;
+}
+.colorJCP{
+    background-color: #C8A169;
+}
+.colorFP{
+    background-color: #885361;
+}
